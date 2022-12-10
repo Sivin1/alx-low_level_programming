@@ -19,5 +19,3 @@ else if (n < 0)
 	printf("%d is negative\n", n); /* your code goes there */
 return (0);
 }
-Footer
-© 2022 GitHub, Inc.
