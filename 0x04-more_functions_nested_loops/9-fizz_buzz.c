@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
  * main - print either number or fizz or fizzbuzz
  *
  * Return: return 0
  */
+
 int main(void)
 {
 	int num = 1;
