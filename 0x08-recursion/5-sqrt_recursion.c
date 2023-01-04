@@ -1,28 +1,32 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - main funct
- * @n: int n
- * Return: int
+ * my_sqrt_recursion - This is my my_sqrt_recursion
+ *                     function about the square root
+ * @a: The entry is equal to n, of the before function
+ * @b: This is the sum
+ *
+ * Return: This is the result
  */
-int _sqrt_recursion(int n)
+int my_sqrt_recursion(int a, int b)
 {
-	return (_sqrt(n, 1));
+	if (a == (b * b))
+		return (b);
+	else if ((b * b) >= a)
+		return (-1);
+	else
+		return (my_sqrt_recursion(a, b + 1));
 }
 
 /**
- * _sqrt - _sqrt_recursion
- * @n: integer paramtr
- * @i: integer parameter
- * Return: sqrt
+ * _sqrt_recursion - This is my first function
+ * @n: This is my value
+ *
+ * Return: This is my result of the function my_sqrt_recursion
  */
-int _sqrt(int n, int i)
+int _sqrt_recursion(int n)
 {
-	if (n < 0)
+	if (n <= 0)
 		return (-1);
-	if ((i * i) > n)
-		return (-1);
-	if (i * i == n)
-		return (i);
-	return (_sqrt(n, i + 1));
+	return (my_sqrt_recursion(n, 0));
 }
