@@ -1,8 +1,10 @@
 #include <stdio.h>
+
 /**
 * rev_string - reverse string
 * @s: is string to reverse
 */
+
 void rev_string(char *s)
 {
 	int i = 0;
